@@ -1,2 +1,10 @@
 automacao_venv/
-
+config.py
+__pycache__/
+*.png
+relatorio_vendas.pdf
+*.pyc
+*.tmp
+venv/
+env/
+    

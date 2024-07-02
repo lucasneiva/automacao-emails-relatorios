@@ -69,21 +69,6 @@ Este projeto visa automatizar o envio de e-mails e a geração de relatórios co
    - Tendência de vendas ao longo da semana
    - Top 5 produtos mais lucrativos
 
-## Como Usar
-
-### Pré-requisitos
-
-- Python 3.x instalado
-- Biblioteca `virtualenv` para criar um ambiente virtual
-
-### Instalação
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/lucasneiva/automacao-emails-relatorios.git
-   cd automacao-emails-relatorios
-   ``` 
-
 ### Como Usar
 
 ### Pré-requisitos
@@ -110,7 +95,7 @@ Este projeto visa automatizar o envio de e-mails e a geração de relatórios co
    pip install -r requirements.txt
    ```
 
-### Exemplo de `requirements.txt`
+### requirements.txt
 
 Certifique-se de criar um arquivo `requirements.txt` na raiz do projeto com o seguinte conteúdo:
 
@@ -124,10 +109,20 @@ fpdf
 schedule
 ```
 
+### Configuração
+
+Crie um arquivo config.py na raiz do projeto com suas credenciais de e-mail:
+python
+
+```
+EMAIL_REMETENTE = "seu_email@gmail.com"
+EMAIL_SENHA = "sua_senha"
+EMAIL_DESTINATARIO = "destinatario@exemplo.com"
+```
+
 ### Uso
 
-1. Coloque seus dados em uma planilha Excel (`dados.xlsx`) na raiz do projeto.
-2. Execute o script para ler os dados, gerar o relatório e enviar o e-mail:
+1. Execute o script para ler os dados, gerar o relatório e enviar o e-mail:
    ```bash
    python main.py
    ```
